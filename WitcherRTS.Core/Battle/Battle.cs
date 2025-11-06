@@ -16,7 +16,7 @@ namespace WitcherRTS.Core.Battle
 
         public void StartBattle()
         {
-            Console.WriteLine("--- Kampf beginnt ---\n");
+            Console.WriteLine("--- Battle begins ---\n");
 
             while (unitA.IsAlive() && unitB.IsAlive())
             {
@@ -25,7 +25,7 @@ namespace WitcherRTS.Core.Battle
 
                 if (!unitB.IsAlive())
                 {
-                    Console.WriteLine($"{unitB.GetName()} ist gestorben!");
+                    Console.WriteLine($"{unitB.GetName()} has died!");
                     break;
                 }
 
@@ -34,19 +34,19 @@ namespace WitcherRTS.Core.Battle
 
                 if (!unitA.IsAlive())
                 {
-                    Console.WriteLine($"{unitA.GetName()} ist gestorben!");
+                    Console.WriteLine($"{unitA.GetName()} has died!");
                     break;
                 }
 
                 Console.WriteLine();
             }
 
-            Console.WriteLine("--- Kampf beendet ---");
+            Console.WriteLine("--- Battle ended ---");
         }
         
         private void PrintAttack(Unit attacker, Unit target)
         {
-            Console.WriteLine($"{attacker.GetName()} greift {target.GetName()} an!");
+            Console.WriteLine($"{attacker.GetName()} attacks {target.GetName()}!");
         }
     }
 }

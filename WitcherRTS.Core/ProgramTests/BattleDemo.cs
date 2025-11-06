@@ -9,14 +9,27 @@ namespace WitcherRTS.Core.ProgramTests
         static void Main(string[] args)
         {
             Witcher geralt = new Witcher("Geralt");
-            Monster griff = new Monster("Greif");
+            Monster griffin = new Monster("Griffin");
+            Soldier nilfgaardian = new Soldier("Nilfgaardian Soldier");
             
-            Battle.Battle battle = new Battle.Battle(geralt, griff);
-            battle.StartBattle();
+            Console.WriteLine("=== Battle 1: Geralt vs Griffin ===\n");
+            Battle.Battle battle1 = new Battle.Battle(geralt, griffin);
+            battle1.StartBattle();
             
-            Console.WriteLine("\n--- Endstatus ---");
+            Console.WriteLine("\n--- End Status ---");
             Console.WriteLine($"{geralt.GetName()} HP: {geralt.GetHealth()}");
-            Console.WriteLine($"{griff.GetName()} HP: {griff.GetHealth()}");
+            Console.WriteLine($"{griffin.GetName()} HP: {griffin.GetHealth()}");
+            
+            if (geralt.IsAlive())
+            {
+                Console.WriteLine("\n\n=== Battle 2: Geralt vs Nilfgaardian Soldier ===\n");
+                Battle.Battle battle2 = new Battle.Battle(geralt, nilfgaardian);
+                battle2.StartBattle();
+                
+                Console.WriteLine("\n--- End Status ---");
+                Console.WriteLine($"{geralt.GetName()} HP: {geralt.GetHealth()}");
+                Console.WriteLine($"{nilfgaardian.GetName()} HP: {nilfgaardian.GetHealth()}");
+            }
         }
     }
 }
