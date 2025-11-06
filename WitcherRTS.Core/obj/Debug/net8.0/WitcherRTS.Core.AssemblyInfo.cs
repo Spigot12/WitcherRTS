@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("WitcherRTS.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ced5f1e477c71fdfdf2f6a50a1f7dbca54a0f3be")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb5fba13e82cac609822a8c8c007e35fb948ad98")]
 [assembly: System.Reflection.AssemblyProductAttribute("WitcherRTS.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("WitcherRTS.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

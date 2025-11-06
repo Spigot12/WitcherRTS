@@ -38,7 +38,6 @@ public class Unit
         if (health < 0)
         {
             health = 0;
-            Console.WriteLine("Du bist gestorben.");
         }
         
         Console.WriteLine($"{name} erleidet {damage} Schaden. HP = {health}");
