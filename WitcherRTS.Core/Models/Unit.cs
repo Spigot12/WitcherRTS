@@ -18,7 +18,7 @@ public class Unit
         
     }
 
-    void Attack(Unit target)
+    public void Attack(Unit target)
     {
         int damage = this.attackPower - target.defence;
 
@@ -30,7 +30,7 @@ public class Unit
         target.TakeDamage(damage);
     }
     
-    void TakeDamage(int damage)
+    public void TakeDamage(int damage)
     {
         health -= damage;
         
@@ -49,5 +49,16 @@ public class Unit
     {
         return health > 0;
     }
+    
+    public string GetName()
+    {
+        return name;
+    }
+
+    public int GetHealth()
+    {
+        return health;
+    }
+
     
 }
