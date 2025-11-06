@@ -1,6 +1,12 @@
-namespace WitcherRTS.Core.Battle;
+using System;
 
-public class BattleLogger
+namespace WitcherRTS.Core.Battle
 {
-    
+    public class BattleLogger
+    {
+        public void Log(string message)
+        {
+            Console.WriteLine(message);
+        }
+    }
 }

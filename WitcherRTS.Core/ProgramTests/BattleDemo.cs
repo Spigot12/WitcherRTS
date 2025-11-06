@@ -1,5 +1,6 @@
 using System;
 using WitcherRTS.Core.Models;
+using WitcherRTS.Core.Battle;
 
 namespace WitcherRTS.Core.ProgramTests
 {
@@ -9,19 +10,13 @@ namespace WitcherRTS.Core.ProgramTests
         {
             Witcher geralt = new Witcher("Geralt");
             Monster griff = new Monster("Greif");
-            Soldier soldier = new Soldier("Nilfgaardischer Soldat");
-
-            Console.WriteLine("=== Kampf beginnt ===\n");
             
-            geralt.Attack(griff);
-            griff.Attack(geralt);
-            soldier.Attack(griff);
-
-            Console.WriteLine("\n=== Kampf Ende ===\n");
+            Battle.Battle battle = new Battle.Battle(geralt, griff);
+            battle.StartBattle();
             
+            Console.WriteLine("\n--- Endstatus ---");
             Console.WriteLine($"{geralt.GetName()} HP: {geralt.GetHealth()}");
             Console.WriteLine($"{griff.GetName()} HP: {griff.GetHealth()}");
-            Console.WriteLine($"{soldier.GetName()} HP: {soldier.GetHealth()}");
         }
     }
 }

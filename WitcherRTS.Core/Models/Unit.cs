@@ -16,6 +16,7 @@ public class Unit
         this.faction = faction;
         
         
+        
     }
 
     public void Attack(Unit target)
@@ -44,12 +45,11 @@ public class Unit
         
         
     }
-
-    public bool isAlive()
+    
+    public bool IsAlive()
     {
         return health > 0;
     }
-    
     public string GetName()
     {
         return name;
