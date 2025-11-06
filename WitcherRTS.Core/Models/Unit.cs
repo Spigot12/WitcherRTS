@@ -14,9 +14,6 @@ public class Unit
         this.attackPower = attackPower;
         this.defence = defence;
         this.faction = faction;
-        
-        
-        
     }
 
     public void Attack(Unit target)
@@ -41,7 +38,6 @@ public class Unit
         }
         
         Console.WriteLine($"{name} erleidet {damage} Schaden. HP = {health}");
-        
         
     }
     
