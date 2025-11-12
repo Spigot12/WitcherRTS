@@ -1,0 +1,12 @@
+/Users/sherwin/RiderProjects/WitcherRTS.Core/WitcherRTS.Core/bin/Debug/net8.0/WitcherRTS.Core.deps.json
+/Users/sherwin/RiderProjects/WitcherRTS.Core/WitcherRTS.Core/bin/Debug/net8.0/WitcherRTS.Core.dll
+/Users/sherwin/RiderProjects/WitcherRTS.Core/WitcherRTS.Core/bin/Debug/net8.0/WitcherRTS.Core.pdb
+/Users/sherwin/RiderProjects/WitcherRTS.Core/WitcherRTS.Core/obj/Debug/net8.0/WitcherRTS.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sherwin/RiderProjects/WitcherRTS.Core/WitcherRTS.Core/obj/Debug/net8.0/WitcherRTS.Core.AssemblyInfoInputs.cache
+/Users/sherwin/RiderProjects/WitcherRTS.Core/WitcherRTS.Core/obj/Debug/net8.0/WitcherRTS.Core.AssemblyInfo.cs
+/Users/sherwin/RiderProjects/WitcherRTS.Core/WitcherRTS.Core/obj/Debug/net8.0/WitcherRTS.Core.csproj.CoreCompileInputs.cache
+/Users/sherwin/RiderProjects/WitcherRTS.Core/WitcherRTS.Core/obj/Debug/net8.0/WitcherRTS.Core.sourcelink.json
+/Users/sherwin/RiderProjects/WitcherRTS.Core/WitcherRTS.Core/obj/Debug/net8.0/WitcherRTS.Core.dll
+/Users/sherwin/RiderProjects/WitcherRTS.Core/WitcherRTS.Core/obj/Debug/net8.0/refint/WitcherRTS.Core.dll
+/Users/sherwin/RiderProjects/WitcherRTS.Core/WitcherRTS.Core/obj/Debug/net8.0/WitcherRTS.Core.pdb
+/Users/sherwin/RiderProjects/WitcherRTS.Core/WitcherRTS.Core/obj/Debug/net8.0/ref/WitcherRTS.Core.dll
