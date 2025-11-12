@@ -37,7 +37,7 @@ public class Unit
             health = 0;
         }
         
-        Console.WriteLine($"{name} erleidet {damage} Schaden. HP = {health}");
+        Console.WriteLine($"{name} takes {damage} Damage. HP = {health}");
         
     }
     
