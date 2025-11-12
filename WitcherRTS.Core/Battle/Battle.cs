@@ -7,46 +7,43 @@ namespace WitcherRTS.Core.Battle
     {
         private Unit unitA;
         private Unit unitB;
+        private BattleLogger logger;
 
-        public Battle(Unit unitA, Unit unitB)
+        public Battle(Unit unitA, Unit unitB, BattleLogger logger)
         {
             this.unitA = unitA;
             this.unitB = unitB;
+            this.logger = logger;
         }
 
         public void StartBattle()
         {
-            Console.WriteLine("--- Battle begins ---\n");
+            logger.Log("--- Battle begins ---\n");
 
             while (unitA.IsAlive() && unitB.IsAlive())
             {
-                PrintAttack(unitA, unitB);
+                logger.Log($"{unitA.GetName()} attacks {unitB.GetName()}!");
                 unitA.Attack(unitB);
 
                 if (!unitB.IsAlive())
                 {
-                    Console.WriteLine($"{unitB.GetName()} has died!");
+                    logger.Log($"{unitB.GetName()} has died!");
                     break;
                 }
 
-                PrintAttack(unitB, unitA);
+                logger.Log($"{unitB.GetName()} attacks {unitA.GetName()}!");
                 unitB.Attack(unitA);
 
                 if (!unitA.IsAlive())
                 {
-                    Console.WriteLine($"{unitA.GetName()} has died!");
+                    logger.Log($"{unitA.GetName()} has died!");
                     break;
                 }
 
-                Console.WriteLine();
+                logger.Log("");
             }
 
-            Console.WriteLine("--- Battle ended ---");
-        }
-        
-        private void PrintAttack(Unit attacker, Unit target)
-        {
-            Console.WriteLine($"{attacker.GetName()} attacks {target.GetName()}!");
+            logger.Log("--- Battle ended ---");
         }
     }
 }
